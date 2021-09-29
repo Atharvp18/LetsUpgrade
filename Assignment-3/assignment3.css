@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: 1350px;
+    margin-left: 90px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    border-radius: 10px 30px;
+    justify-content: center;
+    position: fixed;
+
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 1000;
+    font-family: Comic Neue, sans-serif;
+    line-height: 70px;
+    color: #fff;
+}
+.navigation{
+    height: 70px;
+    width: 40%;
+}
+.nav-bar{
+    display: flex;
+}
+.nav-link{
+    list-style-type: none;
+    color: #fff;
+    height: 70px;
+    width: 30%;
+    text-align: center;
+    line-height: 70px;
+    font-family: Comic Neue, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: rgb(240, 49, 49);
+}
+
+.banner{
+    width: 100%;
+    height: 70vh;
+    background-color: gray;
+    background-image: url('https://m.media-amazon.com/images/I/61MZOH1bWCL._ACSL1001.jpg');
+    background-size: cover;
+    background-position-y: -400px ;
+    background-repeat: no-repeat;
+}
+
+.banner-desc{
+    width: 40%;
+    background-color: rgba(0,0,0,.2);
+    font-size: 60px;
+    font-family: Comic Neue, sans-serif;
+    display: inline-block;
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 450px;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+}
+
+.btn{
+    padding: 20px 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid #fff 2px;
+    background-color: #fd0202;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+
+}
+
+.btn:hover{
+    background-color: #e73e3e;
+    
+}
+
+.movies{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.movies-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 40px;
+    font-family: Comic Neue, sans-serif;
+    font-weight: normal;
+}
+
+.movies-parent{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movie{
+    width: 23%;
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+.movie1{
+    background-position-x: -18px ;
+    background-size: cover;
+    background-image: url('https://cdn.shopify.com/s/files/1/0405/1927/0554/products/image_c5d73d0f-0908-43c8-931b-026ede3c5de3_1125x.jpg?v=1625583545');
+}
+
+.movie2{
+    background-position-x: -80px;
+    background-image: url('https://inthesetimes.com/imager/s3_us-east-2_amazonaws_com/itt-images/interstellar_5_01c8ac7cc3b849e525e370bc51344120.jpg');
+}
+
+.movie3{
+    background-position-x: -20px;
+    background-position-y: -80px;
+    background-image: url('https://res.cloudinary.com/jerrick/image/upload/v1531240166/q7qi7uzpwuyypphhtnqw.jpg');
+}
+
+.movie4{
+    background-position-x: -50px ;
+    background-image: url('https://i.pinimg.com/474x/4d/67/3d/4d673d0eadb0614bf4e1e4ecafce0ae1--ride-or-die-movie-tv.jpg');
+}
+
+.padd{
+    padding: 50px;
+}
+.padd1{
+    padding: 20px;
+}
+.padd2{
+    padding: 32px;
+}
+.movie-desc{
+    height: 450px;
+    width: 100%;
+    background-color: rgba(255,255,255,.6);
+    color: #313131;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 300px;
+    
+}
+
+.movie-desc:hover{
+    margin-top: 0px;
+}
+
+.movie-title{
+    font-size: 20px;
+    font-family: Comic Neue, sans-serif;
+}
+
+.movies-btn{
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid #fff 2px;
+    background-color: #fd0202;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.movies-text{
+    font-family: Comic Neue, sans-serif;
+    color: black;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.movies-btn:hover{
+    background-color: #e73e3e;
+}
+
+@media  (max-width:480px) {
+    .banner{
+        background: none;
+    }
+    .header{
+        margin-left: 40px;
+        width: 400px;
+        position: static;
+        background-color: rgba(255,0,0,.5);
+    }
+    .container{
+        flex-direction: column;
+        width: 95%;
+    }
+    .banner-desc{
+        font-size: 40px;
+        margin-left: 120px;
+        margin-top: 20px;
+        background-color: rgba(255,0,0,.5);
+    }
+    .logo{
+        width: 100%;
+        text-align: left;
+    }
+    .navigation{
+        width: 100%;
+        height: auto;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-link{
+        width: 100%;
+        text-align: left;
+    }
+    .movies{
+        margin-top: -400px;
+    }
+    .movie{
+        background-repeat: no-repeat ;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .padd1{
+        padding-left: 50px;
+    }
+    .padd2{
+        padding: 40px;
+    }
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+.parent{
+    height: 91vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.parent-title{
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Comic Neue, sans-serif;
+    font-weight: 1000;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    border: white solid 2px;
+}
+.child1{
+    background-color: rgb(27, 153, 211);
+}
+.child2{
+    background-color: rgb(255, 0, 85);
+}
+.child3{
+    background-color: rgb(255, 102, 0);
+}
+.child4{
+    background-color: rgb(3, 201, 3);
+}
+.child5{
+    background-color: rgb(12, 0, 122);
+}
+
+@media (max-width:768px){
+    .parent{
+        flex-direction: column;
+    }
+} 
